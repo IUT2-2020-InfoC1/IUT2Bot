@@ -1,5 +1,6 @@
 package com.jesus_crie.iut2_bot;
 
+import com.jesus_crie.iut2_bot.command.GroupCommand;
 import com.jesus_crie.iut2_bot.command.HelpCommand;
 import com.jesus_crie.iut2_bot.command.LinksCommand;
 import com.jesus_crie.iut2_bot.command.StopCommand;
@@ -25,6 +26,7 @@ public class IUT2Bot {
         cmdModule.registerCommands(
                 new HelpCommand(),
                 new LinksCommand(),
+                new GroupCommand(),
 
                 new StopCommand()
         );
