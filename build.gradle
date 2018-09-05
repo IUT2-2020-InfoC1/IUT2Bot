@@ -7,10 +7,16 @@ version '1.0'
 
 sourceCompatibility = 1.8
 
+project.ext {
+    modularVersion = '2.3.4_18'
+}
+
 repositories {
     mavenCentral()
+    jcenter()
 }
 
 dependencies {
+    implementation "com.jesus-crie:modularbot-base:$project.ext.modularVersion"
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
