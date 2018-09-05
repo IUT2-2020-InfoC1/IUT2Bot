@@ -6,6 +6,7 @@ import com.jesus_crie.modularbot_command.AccessLevel;
 import com.jesus_crie.modularbot_command.Command;
 import com.jesus_crie.modularbot_command.CommandEvent;
 import com.jesus_crie.modularbot_command.annotations.CommandInfo;
+import com.jesus_crie.modularbot_command.annotations.RegisterPattern;
 import net.dv8tion.jda.core.EmbedBuilder;
 import net.dv8tion.jda.core.entities.MessageEmbed;
 import net.dv8tion.jda.core.entities.Role;
@@ -27,17 +28,31 @@ public class GroupCommand extends Command {
 
     private static final MessageEmbed MESSAGE_ERROR_GROUP_NOT_FOUND = Utils.getErrorMessage("Aucun role ne correspond à ce groupe !", null);
 
+
+    @RegisterPattern(arguments = "STRING")
     public void onGroup(@Nonnull final CommandEvent event, @Nonnull final String group) {
         if (group.length() == 2 && group.matches("[a-dA-D][12]")) {
             try {
                 final Role role = event.getGuild().getRolesByName(group, true).get(0);
-                role.getGuild().getController().addSingleRoleToMember(event.getMember(), role).complete();
 
-                final EmbedBuilder builder = new EmbedBuilder()
-                        .setAuthor("Vous avez été ajouter au groupe: " + role.getName() + " !", null, Icons.ICON_ACCCEPT)
-                        .setColor(0x00ff00);
+                if (event.getMember().getRoles().contains(role)) {
+                    role.getGuild().getController().removeSingleRoleFromMember(event.getMember(), role).complete();
 
-                event.getChannel().sendMessage(builder.build()).queue();
+                    final EmbedBuilder builder = new EmbedBuilder()
+                            .setAuthor("Vous avez quitter le groupe: " + role.getName() + " !", null, Icons.ICON_ACCCEPT)
+                            .setColor(0x00ff00);
+
+                    event.getChannel().sendMessage(builder.build()).queue();
+
+                } else {
+                    role.getGuild().getController().addSingleRoleToMember(event.getMember(), role).complete();
+
+                    final EmbedBuilder builder = new EmbedBuilder()
+                            .setAuthor("Vous avez été ajouté au groupe: " + role.getName() + " !", null, Icons.ICON_ACCCEPT)
+                            .setColor(0x00ff00);
+
+                    event.getChannel().sendMessage(builder.build()).queue();
+                }
 
             } catch (IndexOutOfBoundsException e) {
                 // Should not happen but meh.
