@@ -20,7 +20,7 @@ public class HelpCommand extends Command {
             .setAuthor("Help", null, Icons.ICON_QUESTION)
             .setColor(0xffffff)
             .addField(Icons.EMOTE_ORANGE_DIAMOND + " !help", "Affiche cette aide.", false)
-            .addField(Icons.EMOTE_ORANGE_DIAMOND + " !links", "Affiche les liens de Chamilo, l'emploi du temps.", false)
+            .addField(Icons.EMOTE_ORANGE_DIAMOND + " !links", "Affiche les liens de Chamilo, l'emploi du temps et des mails.", false)
             .addField(Icons.EMOTE_ORANGE_DIAMOND + " !group <group>", "Permet de rejoindre son groupe.", false)
             .build();
 

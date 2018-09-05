@@ -20,7 +20,8 @@ public class LinksCommand extends Command {
             .setAuthor("Some useful links", null, Icons.ICON_INFORMATION)
             .setColor(0xffffff)
             .appendDescription(Icons.EMOTE_ORANGE_DIAMOND + " **[Chamilo](https://chamilo.iut2.univ-grenoble-alpes.fr)**\n")
-            .appendDescription(Icons.EMOTE_ORANGE_DIAMOND + " **[Emploi du temps](http://www-ade.iut2.upmf-grenoble.fr/ade_services/planning_perso/?cas=1)**")
+            .appendDescription(Icons.EMOTE_ORANGE_DIAMOND + " **[Emploi du temps](http://www-ade.iut2.upmf-grenoble.fr/ade_services/planning_perso/?cas=1)**\n")
+            .appendDescription(Icons.EMOTE_ORANGE_DIAMOND + " **[Webmail](https://webmail.etu.univ-grenoble-alpes.fr)**")
             .build();
 
     @RegisterPattern
