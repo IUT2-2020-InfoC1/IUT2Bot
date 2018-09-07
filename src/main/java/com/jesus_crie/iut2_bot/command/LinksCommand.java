@@ -17,11 +17,13 @@ import javax.annotation.Nonnull;
 public class LinksCommand extends Command {
 
     private static final MessageEmbed MESSAGE = new EmbedBuilder()
-            .setAuthor("Some useful links", null, Icons.ICON_INFORMATION)
+            .setAuthor("Liens utiles", null, Icons.ICON_INFORMATION)
             .setColor(0xffffff)
-            .appendDescription(Icons.EMOTE_ORANGE_DIAMOND + " **[Chamilo](https://chamilo.iut2.univ-grenoble-alpes.fr)**\n")
-            .appendDescription(Icons.EMOTE_ORANGE_DIAMOND + " **[Emploi du temps](http://www-ade.iut2.upmf-grenoble.fr/ade_services/planning_perso/?cas=1)**\n")
-            .appendDescription(Icons.EMOTE_ORANGE_DIAMOND + " **[Webmail](https://webmail.etu.univ-grenoble-alpes.fr)**")
+            .appendDescription(Icons.EMOTE_DIAMOND_ORANGE + " **[Chamilo](https://chamilo.iut2.univ-grenoble-alpes.fr)**\n")
+            .appendDescription(Icons.EMOTE_DIAMOND_ORANGE + " **[Emploi du temps](http://www-ade.iut2.upmf-grenoble.fr/ade_services/planning_perso/?cas=1)**\n")
+            .appendDescription(Icons.EMOTE_DIAMOND_ORANGE + " **[Webmail](https://webmail.etu.univ-grenoble-alpes.fr)**")
+            .appendDescription("\n")
+            .appendDescription(Icons.EMOTE_DIAMOND_BLUE + " **[Sources du bot](https://github.com/IUT2-2020-InfoC1/IUT2Bot)**")
             .build();
 
     @RegisterPattern

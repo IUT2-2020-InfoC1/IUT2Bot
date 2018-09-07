@@ -2,7 +2,8 @@ package com.jesus_crie.iut2_bot;
 
 public class Icons {
 
-    public static final String EMOTE_ORANGE_DIAMOND = "\uD83D\uDD38";
+    public static final String EMOTE_DIAMOND_ORANGE = "\uD83D\uDD38";
+    public static final String EMOTE_DIAMOND_BLUE = "\uD83D\uDD39";
 
     public static final String ICON_INFORMATION = "https://cdn.discordapp.com/attachments/302785106802638848/302790538627776512/sign-info-icon.png";
     public static final String ICON_QUESTION = "https://cdn.discordapp.com/attachments/302785106802638848/302793019323580416/sign-question-icon.png";

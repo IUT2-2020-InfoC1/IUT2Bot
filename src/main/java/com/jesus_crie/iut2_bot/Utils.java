@@ -1,6 +1,8 @@
 package com.jesus_crie.iut2_bot;
 
 import net.dv8tion.jda.core.EmbedBuilder;
+import net.dv8tion.jda.core.Permission;
+import net.dv8tion.jda.core.entities.Icon;
 import net.dv8tion.jda.core.entities.MessageEmbed;
 
 import javax.annotation.Nonnull;
@@ -17,5 +19,14 @@ public class Utils {
             builder.setDescription(content);
 
         return builder.build();
+    }
+
+    public static MessageEmbed getErrorMessagePermission(@Nonnull final Permission permission) {
+        return new EmbedBuilder()
+                .setAuthor("Je n'ai pas la permission de faire ça !", null, Icons.ICON_DENY)
+                .setColor(0xff0000)
+                .appendDescription("Merci d'aller taper un admin et pas le créateur du bot !\n")
+                .appendDescription("Permission manquante: **" + permission.getName() + "**")
+                .build();
     }
 }

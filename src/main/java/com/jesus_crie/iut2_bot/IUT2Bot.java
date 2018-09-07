@@ -1,9 +1,6 @@
 package com.jesus_crie.iut2_bot;
 
-import com.jesus_crie.iut2_bot.command.GroupCommand;
-import com.jesus_crie.iut2_bot.command.HelpCommand;
-import com.jesus_crie.iut2_bot.command.LinksCommand;
-import com.jesus_crie.iut2_bot.command.StopCommand;
+import com.jesus_crie.iut2_bot.command.*;
 import com.jesus_crie.modularbot.ModularBot;
 import com.jesus_crie.modularbot.ModularBotBuilder;
 import com.jesus_crie.modularbot_command.CommandModule;
@@ -22,6 +19,7 @@ public class IUT2Bot {
         assert cmdModule != null; // No comment plz, i known.
 
         cmdModule.setCreatorId(182547138729869314L);
+        cmdModule.addListener(new CommandListener());
 
         cmdModule.registerCommands(
                 new HelpCommand(),

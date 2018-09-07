@@ -19,9 +19,9 @@ public class HelpCommand extends Command {
     private static final MessageEmbed MESSAGE = new EmbedBuilder()
             .setAuthor("Help", null, Icons.ICON_QUESTION)
             .setColor(0xffffff)
-            .addField(Icons.EMOTE_ORANGE_DIAMOND + " !help", "Affiche cette aide.", false)
-            .addField(Icons.EMOTE_ORANGE_DIAMOND + " !links", "Affiche les liens de Chamilo, l'emploi du temps et des mails.", false)
-            .addField(Icons.EMOTE_ORANGE_DIAMOND + " !group <group>", "Permet de rejoindre son groupe.", false)
+            .addField(Icons.EMOTE_DIAMOND_ORANGE + " !help", "Affiche cette aide.", false)
+            .addField(Icons.EMOTE_DIAMOND_ORANGE + " !links", "Affiche les liens utiles.", false)
+            .addField(Icons.EMOTE_DIAMOND_ORANGE + " !group <group>", "Permet de rejoindre son groupe.", false)
             .build();
 
     @RegisterPattern
