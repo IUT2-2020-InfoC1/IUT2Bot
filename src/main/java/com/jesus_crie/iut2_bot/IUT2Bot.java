@@ -1,6 +1,7 @@
 package com.jesus_crie.iut2_bot;
 
 import com.jesus_crie.iut2_bot.command.*;
+import com.jesus_crie.iut2_bot.timetable.TimetableModule;
 import com.jesus_crie.modularbot.ModularBot;
 import com.jesus_crie.modularbot.ModularBotBuilder;
 import com.jesus_crie.modularbot_command.CommandModule;
@@ -11,7 +12,10 @@ public class IUT2Bot {
 
     public static void main(String[] args) {
         final ModularBotBuilder builder = new ModularBotBuilder(args[0])
-                .autoLoadBaseModules();
+                .autoLoadBaseModules()
+                .registerModules(
+                        new TimetableModule()
+                );
 
         final ModularBot bot = builder.build();
 
@@ -26,7 +30,8 @@ public class IUT2Bot {
                 new LinksCommand(),
                 new GroupCommand(),
 
-                new StopCommand()
+                new StopCommand(),
+                new TestCommand()
         );
 
 
