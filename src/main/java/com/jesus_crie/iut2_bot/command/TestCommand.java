@@ -22,10 +22,5 @@ public class TestCommand extends Command {
     public void exec(@Nonnull final CommandEvent event) {
         final TimetableModule module = event.getModule().getBot().getModuleManager().getModule(TimetableModule.class);
         assert module != null; // F u
-
-        event.getModule().getBot().getMainPool().execute(() -> {
-            module.readPage(TimetableModule.RESOURCE_C1);
-            event.fastReply("ok");
-        });
     }
 }
