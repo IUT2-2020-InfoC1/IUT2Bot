@@ -19,9 +19,18 @@ public class HelpCommand extends Command {
     private static final MessageEmbed MESSAGE = new EmbedBuilder()
             .setAuthor("Help", null, Icons.ICON_QUESTION)
             .setColor(0xffffff)
-            .addField(Icons.EMOTE_DIAMOND_ORANGE + " +help", "Affiche cette aide.", false)
-            .addField(Icons.EMOTE_DIAMOND_ORANGE + " +links", "Affiche les liens utiles.", false)
-            .addField(Icons.EMOTE_DIAMOND_ORANGE + " +group <group>", "Permet de rejoindre son groupe.", false)
+            .setDescription("Bot par <@182547138729869314> et <@164423900208300032> (C1 ftw)")
+            .addField(Icons.EMOTE_DIAMOND_ORANGE + " +help", "Affiche cette aide.", true)
+            .addField(Icons.EMOTE_DIAMOND_ORANGE + " +links", "Affiche les liens utiles.", true)
+            .addField(Icons.EMOTE_DIAMOND_ORANGE + " +group <group>",
+                    "Permet de rejoindre son groupe. Ne peut être fait que si vous n'ête pas déjà dans un groupe !", false)
+            .addField(Icons.EMOTE_DIAMOND_ORANGE + " +edt [day|all] [--details]",
+                    "Affiche l'emploi du temps d'une journée ou de la semaine **pour son groupe**.\n" +
+                            "Usage: ```diff\n" +
+                            "+edt\n" +
+                            "+edt [lundi|mardi|mercredi|jeudi|vendredi]\n" +
+                            "+edt all```" +
+                            "*Ajouter `--details` à la fin pour avoir plus de details sur les cours.*", false)
             .build();
 
     @RegisterPattern

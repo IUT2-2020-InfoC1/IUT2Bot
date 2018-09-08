@@ -6,7 +6,6 @@ import com.jesus_crie.modularbot.ModularBot;
 import com.jesus_crie.modularbot.ModularBotBuilder;
 import com.jesus_crie.modularbot.utils.IStateProvider;
 import com.jesus_crie.modularbot_command.CommandModule;
-import com.jesus_crie.modularbot_night_config_wrapper.NightConfigWrapperModule;
 import net.dv8tion.jda.core.OnlineStatus;
 import net.dv8tion.jda.core.entities.Game;
 
@@ -39,21 +38,26 @@ public class IUT2Bot {
             }
         });
 
+
         final ModularBot bot = builder.build();
+
+        final TimetableModule timetableModule = bot.getModuleManager().getModule(TimetableModule.class);
+        assert timetableModule != null; // Don't look at me like this.
 
         final CommandModule cmdModule = bot.getModuleManager().getModule(CommandModule.class);
         assert cmdModule != null; // No comment plz, i known.
-
-        cmdModule.addListener(new CommandListener());
 
         cmdModule.registerCommands(
                 new HelpCommand(),
                 new LinksCommand(),
                 new GroupCommand(),
+                new TimetableCommand(timetableModule),
 
                 new StopCommand(),
                 new TestCommand()
         );
+
+        cmdModule.addListener(new CommandListener());
 
         try {
             bot.login();

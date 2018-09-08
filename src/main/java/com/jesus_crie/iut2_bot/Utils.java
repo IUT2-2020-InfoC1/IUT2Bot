@@ -2,11 +2,11 @@ package com.jesus_crie.iut2_bot;
 
 import net.dv8tion.jda.core.EmbedBuilder;
 import net.dv8tion.jda.core.Permission;
-import net.dv8tion.jda.core.entities.Icon;
 import net.dv8tion.jda.core.entities.MessageEmbed;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
+import java.util.Calendar;
 
 public class Utils {
 
@@ -28,5 +28,26 @@ public class Utils {
                 .appendDescription("Merci d'aller taper un admin et pas le créateur du bot !\n")
                 .appendDescription("Permission manquante: **" + permission.getName() + "**")
                 .build();
+    }
+
+    public static String translateCalendarDay(final int day) {
+        switch (day) {
+            case Calendar.MONDAY:
+                return "Lundi";
+            case Calendar.TUESDAY:
+                return "Mardi";
+            case Calendar.WEDNESDAY:
+                return "Mercredi";
+            case Calendar.THURSDAY:
+                return "Jeudi";
+            case Calendar.FRIDAY:
+                return "Vendredi";
+            case Calendar.SATURDAY:
+                return "Samedi";
+            case Calendar.SUNDAY:
+                return "Dimanche";
+            default:
+                return "Unknown";
+        }
     }
 }

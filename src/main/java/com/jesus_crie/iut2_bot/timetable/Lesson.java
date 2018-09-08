@@ -1,26 +1,30 @@
 package com.jesus_crie.iut2_bot.timetable;
 
+import com.jesus_crie.iut2_bot.Utils;
+
 import javax.annotation.Nonnull;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
-import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Lesson {
 
     private static final SimpleDateFormat FORMAT_DAY = new SimpleDateFormat("dd/MM/yyyy");
-    private static final String FORMAT_HOUR = "%1$dh%2$02d";
+    private static final String FORMAT_HOUR = "%1$02dh%2$02d";
+    private static final String FORMAT_DURATION = "%1$dh%2$02d";
 
     private final ClassInfo info;
     private final Time time;
-    private final List<String> groups;
+    private final List<IUTGroup> groups;
 
     public Lesson(@Nonnull final ClassInfo info, @Nonnull final Time time, @Nonnull final List<String> groups) {
         this.info = info;
         this.time = time;
-        this.groups = groups;
+        this.groups = groups.stream()
+                .map(IUTGroup::fromName)
+                .collect(Collectors.toList());
     }
 
     public ClassInfo getInfo() {
@@ -31,7 +35,7 @@ public class Lesson {
         return time;
     }
 
-    public List<String> getGroups() {
+    public List<IUTGroup> getGroups() {
         return groups;
     }
 
@@ -102,7 +106,7 @@ public class Lesson {
         }
 
         public String getDayFormat() {
-            return FORMAT_DAY.format(day);
+            return FORMAT_DAY.format(day.getTime());
         }
 
         public Duration getDuration() {
@@ -110,7 +114,7 @@ public class Lesson {
         }
 
         public String getDurationFormat() {
-            return String.format(FORMAT_HOUR, duration.toHours(), duration.toMinutes() % 60);
+            return String.format(FORMAT_DURATION, duration.toHours(), duration.toMinutes() % 60);
         }
 
         public Duration getHour() {
@@ -123,7 +127,8 @@ public class Lesson {
 
         @Override
         public String toString() {
-            return "[" + (Calendar.DAY_OF_WEEK) + getDayFormat() + " at " + getHourFormat() + " during " + getDurationFormat() + "]";
+            return "[" + Utils.translateCalendarDay(day.get(Calendar.DAY_OF_WEEK)) + " " + getDayFormat() +
+                    " at " + getHourFormat() + " during " + getDurationFormat() + "]";
         }
     }
 }

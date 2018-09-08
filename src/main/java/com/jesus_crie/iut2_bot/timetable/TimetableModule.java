@@ -10,10 +10,10 @@ import org.slf4j.LoggerFactory;
 
 import javax.annotation.Nonnull;
 import java.time.Duration;
-import java.util.Date;
+import java.util.Calendar;
 import java.util.List;
-import java.util.Map;
 import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.stream.Collectors;
 
 public class TimetableModule extends BaseModule {
 
@@ -43,6 +43,7 @@ public class TimetableModule extends BaseModule {
 
     @Override
     public void onLoad(@Nonnull final ModuleManager moduleManager, @Nonnull final ModularBotBuilder builder) {
+        // Init timetable data
         final NightConfigWrapperModule configModule = moduleManager.getModule(NightConfigWrapperModule.class);
         assert configModule != null; // Yolo
         configModule.useSecondaryConfig(CONFIG_TIMETABLE, "timetable.json");
@@ -52,6 +53,7 @@ public class TimetableModule extends BaseModule {
 
     @Override
     public void onPostInitialization() {
+        // Load timetable data
         final List<Config> root = config.get(CONFIG_ROOT);
 
         for (Config lessonNode : root) {
@@ -63,7 +65,7 @@ public class TimetableModule extends BaseModule {
             );
 
             final Lesson.Time time = new Lesson.Time(
-                    new Date(lessonNode.getLong(CONFIG_DATE_ROOT + "." + CONFIG_DATE_DAY) * 1000),
+                    lessonNode.getLong(CONFIG_DATE_ROOT + "." + CONFIG_DATE_DAY) * 1000,
                     Duration.ofMinutes(lessonNode.getInt(CONFIG_DATE_ROOT + "." + CONFIG_DATE_DURATION)),
                     Duration.ofMinutes(lessonNode.getInt(CONFIG_DATE_ROOT + "." + CONFIG_DATE_HOUR))
             );
@@ -71,7 +73,41 @@ public class TimetableModule extends BaseModule {
             final Lesson lesson = new Lesson(info, time, lessonNode.get(CONFIG_GROUPS));
             lessons.add(lesson);
         }
+    }
 
-        lessons.forEach(System.out::println);
+    @Nonnull
+    public List<Lesson> queryDay(@Nonnull final Calendar day) {
+
+        return lessons.stream()
+                .filter(l -> l.getTime().getDay().get(Calendar.DAY_OF_YEAR) == day.get(Calendar.DAY_OF_YEAR))
+                .collect(Collectors.toList());
+    }
+
+    @Nonnull
+    public List<Lesson> queryGroup(@Nonnull final IUTGroup group) {
+        if (group == IUTGroup.NONE)
+            throw new IllegalArgumentException();
+
+        return lessons.stream()
+                .filter(l -> l.getGroups().contains(group))
+                .collect(Collectors.toList());
+    }
+
+    @Nonnull
+    public List<Lesson> queryDayForGroup(@Nonnull final IUTGroup group, @Nonnull final Calendar day) {
+        if (group == IUTGroup.NONE)
+            throw new IllegalArgumentException();
+
+        return queryDay(day).stream()
+                .filter(l -> l.getGroups().contains(group))
+                .collect(Collectors.toList());
+    }
+
+    private Calendar cleanCalendar(@Nonnull final Calendar calendar) {
+        return new Calendar.Builder()
+                .set(Calendar.YEAR, calendar.get(Calendar.YEAR))
+                .set(Calendar.MONTH, calendar.get(Calendar.MONTH))
+                .set(Calendar.DAY_OF_MONTH, calendar.get(Calendar.DAY_OF_MONTH))
+                .build();
     }
 }

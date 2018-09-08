@@ -31,7 +31,7 @@ def parse_entry_v2(entry: list):
     hour = int(hour_match.group('h')) * 60 + int(hour_match.group('m'))
 
     date = {
-        'day': day.timestamp(),
+        'day': int(day.timestamp()) + 1,
         'hour': hour,
         'duration': int(duration.total_seconds()) / 60
     }
