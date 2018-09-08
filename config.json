@@ -1,0 +1,14 @@
+{
+	"prefix": "+",
+	"creator_id": 0,
+	"guild_prefix": [
+		{
+			"prefix": "/",
+			"guild_id": 0
+		}, 
+		{
+			"prefix": "//",
+			"guild_id": 1
+		}
+	]
+}
