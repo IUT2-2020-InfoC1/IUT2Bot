@@ -28,7 +28,7 @@ public class HelpCommand extends Command {
                     "Affiche l'emploi du temps d'une journée ou de la semaine **pour son groupe**.\n" +
                             "Usage: ```diff\n" +
                             "+edt\n" +
-                            "+edt [lundi|mardi|mercredi|jeudi|vendredi]\n" +
+                            "+edt [lundi|mardi|mercredi|jeudi|vendredi|samedi]\n" +
                             "+edt all```" +
                             "*Ajouter `--details` à la fin pour avoir plus de details sur les cours.*", false)
             .build();

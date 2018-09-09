@@ -138,7 +138,7 @@ public class Lesson implements Comparable<Lesson> {
 
         public String getEndFormat() {
             final Duration end = hour.plus(duration);
-            return String.format(FORMAT_HOUR, end.toHours(), hour.toMinutes() % 60);
+            return String.format(FORMAT_HOUR, end.toHours(), end.toMinutes() % 60);
         }
 
         public long getStart() {
