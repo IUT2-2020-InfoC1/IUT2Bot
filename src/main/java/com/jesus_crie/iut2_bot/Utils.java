@@ -50,4 +50,35 @@ public class Utils {
                 return "Unknown";
         }
     }
+
+    public static String translateCalendarMonth(final int month) {
+        switch (month) {
+            case Calendar.JANUARY:
+                return "Janvier";
+            case Calendar.FEBRUARY:
+                return "Février";
+            case Calendar.MARCH:
+                return "Mars";
+            case Calendar.APRIL:
+                return "Avril";
+            case Calendar.MAY:
+                return "Mai";
+            case Calendar.JUNE:
+                return "Juin";
+            case Calendar.JULY:
+                return "Juillet";
+            case Calendar.AUGUST:
+                return "Août";
+            case Calendar.SEPTEMBER:
+                return "Septembre";
+            case Calendar.OCTOBER:
+                return "Octobre";
+            case Calendar.NOVEMBER:
+                return "Novembre";
+            case Calendar.DECEMBER:
+                return "Décembre";
+            default:
+                return "Unknown";
+        }
+    }
 }

@@ -5,23 +5,25 @@ import javax.annotation.Nullable;
 
 public enum IUTGroup {
 
-    A1("INFO1A1", "a1"),
-    A2("INFO1A2", "a2"),
-    B1("INFO1B1", "b1"),
-    B2("INFO1B2", "b2"),
-    C1("INFO1C1", "c1"),
-    C2("INFO1C2", "c2"),
-    D1("INFO1D1", "d1"),
-    D2("INFO1D2", "d2"),
+    A1("INFO1A1", "A1", 0x1c5212),
+    A2("INFO1A2", "A2", 0x9b59b6),
+    B1("INFO1B1", "B1", 0x2ecc71),
+    B2("INFO1B2", "B2", 0xc50000),
+    C1("INFO1C1", "C1", 0x3498db),
+    C2("INFO1C2", "C2", 0xffffff),
+    D1("INFO1D1", "D1", 0xf1c40f),
+    D2("INFO1D2", "D2", 0xc48800),
 
-    NONE(null, null);
+    NONE(null, null, 0xffffff);
 
     private final String name;
     private final String shortName;
+    private final int color;
 
-    IUTGroup(@Nullable final String name, @Nullable final String shortName) {
+    IUTGroup(@Nullable final String name, @Nullable final String shortName, int color) {
         this.name = name;
         this.shortName = shortName;
+        this.color = color;
     }
 
     public String getName() {
@@ -30,6 +32,10 @@ public enum IUTGroup {
 
     public String getShortName() {
         return shortName;
+    }
+
+    public int getColor() {
+        return color;
     }
 
     @Nullable

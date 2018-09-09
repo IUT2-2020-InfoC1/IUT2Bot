@@ -9,7 +9,7 @@ import java.util.Calendar;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class Lesson {
+public class Lesson implements Comparable<Lesson> {
 
     private static final SimpleDateFormat FORMAT_DAY = new SimpleDateFormat("dd/MM/yyyy");
     private static final String FORMAT_HOUR = "%1$02dh%2$02d";
@@ -39,6 +39,12 @@ public class Lesson {
         return groups;
     }
 
+    public String getGroupsFormat() {
+        return groups.stream()
+                .map(IUTGroup::getShortName)
+                .collect(Collectors.joining(", "));
+    }
+
     public String getId() {
         return String.valueOf(time.day.toInstant().getEpochSecond()) + String.valueOf(time.hour.toMinutes()) + info.room;
     }
@@ -50,6 +56,11 @@ public class Lesson {
     @Override
     public String toString() {
         return "[\n\t" + info + ",\n\t" + time + ",\n\t" + groups + "\n]";
+    }
+
+    @Override
+    public int compareTo(@Nonnull final Lesson o) {
+        return time.day.compareTo(o.time.day);
     }
 
     public static class ClassInfo {
@@ -123,6 +134,19 @@ public class Lesson {
 
         public String getHourFormat() {
             return String.format(FORMAT_HOUR, hour.toHours(), hour.toMinutes() % 60);
+        }
+
+        public String getEndFormat() {
+            final Duration end = hour.plus(duration);
+            return String.format(FORMAT_HOUR, end.toHours(), hour.toMinutes() % 60);
+        }
+
+        public long getStart() {
+            return day.toInstant().toEpochMilli() + hour.toMillis();
+        }
+
+        public long getEnd() {
+            return day.toInstant().toEpochMilli() + hour.plus(duration).toMillis();
         }
 
         @Override

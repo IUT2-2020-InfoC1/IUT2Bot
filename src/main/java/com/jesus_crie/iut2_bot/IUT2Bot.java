@@ -29,7 +29,7 @@ public class IUT2Bot {
 
             @Override
             public IntFunction<Game> getGameProvider() {
-                return i -> Game.watching("over you. Use +help");
+                return i -> Game.listening("Use +help");
             }
 
             @Override
