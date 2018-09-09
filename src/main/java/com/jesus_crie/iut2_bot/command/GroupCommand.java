@@ -21,7 +21,7 @@ import java.util.regex.Pattern;
 )
 public class GroupCommand extends Command {
 
-    private static Pattern GROUP_PATTERN = Pattern.compile("[a-dA-D][12]");
+    public static Pattern GROUP_PATTERN = Pattern.compile("[a-dA-D][12]");
 
     public GroupCommand() {
         super(AccessLevel.GUILD_ONLY);

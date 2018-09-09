@@ -28,12 +28,12 @@ def parse_entry_v2(entry: list):
     duration = datetime.timedelta(hours=h, minutes=m)
 
     hour_match = re.compile(r'^(?P<h>[0-9]{2})h(?P<m>[0-9]{2})$').match(entry[3])
-    hour = int(hour_match.group('h')) * 3600 + int(hour_match.group('m')) * 60
+    hour = int(hour_match.group('h')) * 60 + int(hour_match.group('m'))
 
     date = {
         'day': int(day.timestamp()),
         'hour': hour,
-        'duration': duration.total_seconds() / 3600
+        'duration': int(duration.total_seconds()) / 60
     }
 
     klass = {
@@ -80,5 +80,5 @@ if __name__ == '__main__':
 
         formatted = [create_entry_v2(*parse_entry_v2(c)) for c in data]
 
-    with open('timetable.json', 'w') as f:
-        f.write(json.dumps(formatted, indent=4, sort_keys=True))
+    with open('../timetable.json', 'w') as f:
+        f.write(json.dumps({'data': formatted}, indent=4, sort_keys=True))

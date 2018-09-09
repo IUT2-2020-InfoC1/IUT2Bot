@@ -8,19 +8,29 @@ import com.jesus_crie.modularbot_command.listener.NopCommandListener;
 import com.jesus_crie.modularbot_command.processing.Options;
 import net.dv8tion.jda.core.EmbedBuilder;
 import net.dv8tion.jda.core.entities.MessageEmbed;
+import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.annotation.Nonnull;
 import java.util.List;
 
 public class CommandListener extends NopCommandListener {
 
-    private static final MessageEmbed MESSAGE_ACCESS_LEVEL = Utils.getErrorMessage("Vous n'avez pas le droit d'utiliser cette commande !", null);
+    private static final Logger LOG = LoggerFactory.getLogger("CommandListener");
+
+    private static final MessageEmbed MESSAGE_ACCESS_LEVEL = Utils.getErrorMessage("Vous ne pouvez pas utiliser cette commande dans ce contexte !", null);
 
     private static final MessageEmbed MESSAGE_FAILED_PROCESS = Utils.getErrorMessage("Failed to process command (syntax error)", null);
 
     private static final MessageEmbed MESSAGE_NO_PATTERN = Utils.getErrorMessage("Aucun pattern n'a été trouvé pour ces arguments !", null);
 
     private static final MessageEmbed MESSAGE_UNKNOWN_OPTION = Utils.getErrorMessage("Une option inconnue a été trouvée dans la commande !", null);
+
+    @Override
+    public void onCommandFound(@Nonnull final CommandEvent event) {
+        LOG.info(event.getAuthor().getName() + "#" + event.getAuthor().getDiscriminator() + ": " + event.getMessage().getContentRaw());
+    }
 
     @Override
     public void onTooLowAccessLevel(@Nonnull final CommandEvent event) {

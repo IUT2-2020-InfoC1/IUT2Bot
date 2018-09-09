@@ -4,6 +4,12 @@ public class Icons {
 
     public static final String EMOTE_DIAMOND_ORANGE = "\uD83D\uDD38";
     public static final String EMOTE_DIAMOND_BLUE = "\uD83D\uDD39";
+    public static final String EMOTE_CHECK_MARK_BOX = "\u2705";
+    public static final String EMOTE_CHECK_MARK = "\u2714";
+    public static final String EMOTE_ARROW_RIGHT_BOX = "\u27A1";
+    public static final String EMOTE_ARROW_RIGHT_SOON = "\uD83D\uDD1C";
+    public static final String EMOTE_CLOCK = "\uD83D\uDD52";
+    public static final String EMOTE_HOURGLASS = "\u23F3";
 
     public static final String ICON_INFORMATION = "https://cdn.discordapp.com/attachments/302785106802638848/302790538627776512/sign-info-icon.png";
     public static final String ICON_QUESTION = "https://cdn.discordapp.com/attachments/302785106802638848/302793019323580416/sign-question-icon.png";
