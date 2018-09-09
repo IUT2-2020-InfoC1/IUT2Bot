@@ -16,7 +16,7 @@ import javax.annotation.Nonnull;
 import java.util.regex.Pattern;
 
 @CommandInfo(
-        name = {"group", "g"},
+        name = {"group", "groupe", "g"},
         description = "Used to join a group."
 )
 public class GroupCommand extends Command {
