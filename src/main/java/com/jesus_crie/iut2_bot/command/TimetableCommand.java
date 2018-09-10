@@ -87,6 +87,9 @@ public class TimetableCommand extends Command {
             isToday = false;
             date.add(Calendar.WEEK_OF_YEAR, 1);
             date.set(Calendar.DAY_OF_WEEK, Calendar.MONDAY);
+        } else if (date.get(Calendar.HOUR_OF_DAY) >= 19) {
+            isToday = false;
+            date.add(Calendar.DAY_OF_WEEK, 1);
         }
 
         final List<Lesson> lessons = module.queryDayForGroup(group, date);
