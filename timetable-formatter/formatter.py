@@ -22,8 +22,8 @@ def parse_entry(entry: list):
 def parse_entry_v2(entry: list):
     day = datetime.datetime.strptime(entry[0], '%d/%m/%Y')
 
-    duration_match = re.compile(r'^(?P<h>[0-9]{1,2})h((?P<m>[0-9]{2})min|)$').match(entry[4])
-    h = int(duration_match.group('h'))
+    duration_match = re.compile(r'^((?P<h>[0-9]{1,2})h|)((?P<m>[0-9]{2})min|)$').match(entry[4])
+    h = 0 if duration_match.group('h') is None else int(duration_match.group('h'))
     m = 0 if duration_match.group('m') is None else int(duration_match.group('m'))
     duration = datetime.timedelta(hours=h, minutes=m)
 
