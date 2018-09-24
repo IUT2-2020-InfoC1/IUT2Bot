@@ -57,6 +57,8 @@ public class IUT2Bot {
                 new TestCommand()
         );
 
+        cmdModule.registerQuickCommand("jesus_crie", e -> e.fastReply("...STEEEEEEEEEEUH !!!!!!!!!!!!!!"));
+
         cmdModule.addListener(new CommandListener());
 
         try {
