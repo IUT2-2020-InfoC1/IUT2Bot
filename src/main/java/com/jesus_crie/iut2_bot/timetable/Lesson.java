@@ -7,6 +7,7 @@ import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Calendar;
 import java.util.List;
+import java.util.Locale;
 import java.util.stream.Collectors;
 
 public class Lesson implements Comparable<Lesson> {
@@ -16,12 +17,12 @@ public class Lesson implements Comparable<Lesson> {
     private static final String FORMAT_DURATION = "%1$dh%2$02d";
 
     private final ClassInfo info;
-    private final Time time;
+    private final Schedule schedule;
     private final List<IUTGroup> groups;
 
-    public Lesson(@Nonnull final ClassInfo info, @Nonnull final Time time, @Nonnull final List<String> groups) {
+    public Lesson(@Nonnull final ClassInfo info, @Nonnull final Schedule schedule, @Nonnull final List<String> groups) {
         this.info = info;
-        this.time = time;
+        this.schedule = schedule;
         this.groups = groups.stream()
                 .map(IUTGroup::fromName)
                 .collect(Collectors.toList());
@@ -31,8 +32,8 @@ public class Lesson implements Comparable<Lesson> {
         return info;
     }
 
-    public Time getTime() {
-        return time;
+    public Schedule getSchedule() {
+        return schedule;
     }
 
     public List<IUTGroup> getGroups() {
@@ -46,7 +47,7 @@ public class Lesson implements Comparable<Lesson> {
     }
 
     public String getId() {
-        return String.valueOf(time.day.toInstant().getEpochSecond()) + String.valueOf(time.hour.toMinutes()) + info.room;
+        return String.valueOf(schedule.day.toInstant().getEpochSecond()) + String.valueOf(schedule.hour.toMinutes()) + info.room;
     }
 
     public boolean isGroupPresent(@Nonnull final String group) {
@@ -55,12 +56,12 @@ public class Lesson implements Comparable<Lesson> {
 
     @Override
     public String toString() {
-        return "[\n\t" + info + ",\n\t" + time + ",\n\t" + groups + "\n]";
+        return "[\n\t" + info + ",\n\t" + schedule + ",\n\t" + groups + "\n]";
     }
 
     @Override
     public int compareTo(@Nonnull final Lesson o) {
-        return time.day.compareTo(o.time.day);
+        return schedule.day.compareTo(o.schedule.day);
     }
 
     public static class ClassInfo {
@@ -70,6 +71,12 @@ public class Lesson implements Comparable<Lesson> {
         private final String room;
         private final String teacher;
 
+        /**
+         * @param code    - Code of the class. i.e M1101.
+         * @param name    - Name of the class. i.e Math.
+         * @param room    - Name of the room.
+         * @param teacher - Name of the teacher.
+         */
         public ClassInfo(@Nonnull final String code, @Nonnull final String name, @Nonnull final String room,
                          @Nonnull final String teacher) {
             this.code = code;
@@ -100,14 +107,22 @@ public class Lesson implements Comparable<Lesson> {
         }
     }
 
-    public static class Time {
+    /**
+     * Represent the schedule of a lesson.
+     */
+    public static class Schedule {
         private final Calendar day;
         private final Duration duration;
         private final Duration hour;
 
-        public Time(final long day, @Nonnull final Duration duration, @Nonnull final Duration hour) {
-            this.day = Calendar.getInstance();
-            this.day.setTimeInMillis(day);
+        /**
+         * @param timestamp - The timestamp of the day of the lesson.
+         * @param duration  - The duration of the lesson.
+         * @param hour      - The offset of the start of the lesson regarding to the current day.
+         */
+        public Schedule(final long timestamp, @Nonnull final Duration duration, @Nonnull final Duration hour) {
+            this.day = Calendar.getInstance(Locale.FRANCE);
+            this.day.setTimeInMillis(timestamp);
             this.duration = duration;
             this.hour = hour;
         }

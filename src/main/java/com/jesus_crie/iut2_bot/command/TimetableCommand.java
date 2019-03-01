@@ -22,7 +22,6 @@ import net.dv8tion.jda.core.entities.Role;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
-import java.time.ZoneId;
 import java.util.*;
 
 @CommandInfo(
@@ -195,8 +194,8 @@ public class TimetableCommand extends Command {
             return builder;
         }
 
-        if (isToday && lessons.get(lessons.size() - 1).getTime().getEnd() > date.getTimeInMillis()) {
-            final long remainingMinutes = (lessons.get(lessons.size() - 1).getTime().getEnd() - date.getTimeInMillis()) / 60_000;
+        if (isToday && lessons.get(lessons.size() - 1).getSchedule().getEnd() > date.getTimeInMillis()) {
+            final long remainingMinutes = (lessons.get(lessons.size() - 1).getSchedule().getEnd() - date.getTimeInMillis()) / 60_000;
             builder.setFooter(String.format(MESSAGE_FOOTER_TIME_FORMAT,
                     remainingMinutes / 60, remainingMinutes % 60), Icons.ICON_BELL);
         }
@@ -206,18 +205,18 @@ public class TimetableCommand extends Command {
             for (Lesson lesson : lessons) {
                 String format = MESSAGE_LESSON_DETAIL_HEADER_FUTURE_FORMAT;
 
-                if (isToday && lesson.getTime().getStart() < date.getTimeInMillis()) {
-                    if (lesson.getTime().getEnd() < date.getTimeInMillis())
+                if (isToday && lesson.getSchedule().getStart() < date.getTimeInMillis()) {
+                    if (lesson.getSchedule().getEnd() < date.getTimeInMillis())
                         format = MESSAGE_LESSON_DETAIL_HEADER_DONE_FORMAT;
                     else format = MESSAGE_LESSON_DETAIL_HEADER_CURRENT_FORMAT;
                 }
 
                 builder.addField(
                         String.format(format,
-                                lesson.getTime().getHourFormat(), lesson.getTime().getEndFormat(),
+                                lesson.getSchedule().getHourFormat(), lesson.getSchedule().getEndFormat(),
                                 lesson.getInfo().getName(), lesson.getInfo().getRoom()),
                         String.format(MESSAGE_LESSON_DETAIL_CONTENT_FORMAT,
-                                lesson.getTime().getDurationFormat(), lesson.getInfo().getCode(),
+                                lesson.getSchedule().getDurationFormat(), lesson.getInfo().getCode(),
                                 lesson.getInfo().getTeacher(), lesson.getGroupsFormat()),
                         false);
             }
@@ -228,15 +227,15 @@ public class TimetableCommand extends Command {
                 String format = MESSAGE_LESSON_SIMPLE_FUTURE_FORMAT;
 
                 // State in time of the lesson future/current/past
-                if (isToday && lesson.getTime().getStart() < date.getTimeInMillis()) {
-                    if (lesson.getTime().getEnd() < date.getTimeInMillis())
+                if (isToday && lesson.getSchedule().getStart() < date.getTimeInMillis()) {
+                    if (lesson.getSchedule().getEnd() < date.getTimeInMillis())
                         format = MESSAGE_LESSON_SIMPLE_DONE_FORMAT;
                     else format = MESSAGE_LESSON_SIMPLE_CURRENT_FORMAT;
                 }
 
                 builder.appendDescription(
                         String.format(format,
-                                lesson.getTime().getHourFormat(), lesson.getTime().getEndFormat(), lesson.getTime().getDurationFormat(),
+                                lesson.getSchedule().getHourFormat(), lesson.getSchedule().getEndFormat(), lesson.getSchedule().getDurationFormat(),
                                 lesson.getInfo().getName(), lesson.getInfo().getRoom())
                 ).appendDescription("\n");
             }
