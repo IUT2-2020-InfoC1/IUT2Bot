@@ -1,6 +1,7 @@
 package com.jesus_crie.iut2_bot.timetable;
 
 import com.electronwill.nightconfig.core.Config;
+import com.jesus_crie.iut2_bot.timetable.TimetableExtractor.Lesson;
 import com.jesus_crie.modularbot.ModularBotBuilder;
 import com.jesus_crie.modularbot.module.BaseModule;
 import com.jesus_crie.modularbot.module.ModuleManager;
@@ -9,7 +10,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.annotation.Nonnull;
-import java.time.Duration;
 import java.util.Calendar;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
@@ -23,15 +23,12 @@ public class TimetableModule extends BaseModule {
 
     private static final String CONFIG_TIMETABLE = "timetable";
     private static final String CONFIG_ROOT = "data";
-    private static final String CONFIG_CLASS_ROOT = "class";
-    private static final String CONFIG_CLASS_CODE = "code";
-    private static final String CONFIG_CLASS_NAME = "name";
-    private static final String CONFIG_CLASS_ROOM = "room";
-    private static final String CONFIG_CLASS_TEACHER = "teacher";
-    private static final String CONFIG_DATE_ROOT = "date";
-    private static final String CONFIG_DATE_DAY = "day";
-    private static final String CONFIG_DATE_DURATION = "duration";
-    private static final String CONFIG_DATE_HOUR = "hour";
+    private static final String CONFIG_MODULE_CODE = "module";
+    private static final String CONFIG_MODULE_NAME = "module_name";
+    private static final String CONFIG_ROOM = "room";
+    private static final String CONFIG_TEACHER = "teacher";
+    private static final String CONFIG_TIME_START = "start_millis";
+    private static final String CONFIG_TIME_END = "end_millis";
     private static final String CONFIG_GROUPS = "groups";
 
     private Config config;
@@ -57,21 +54,18 @@ public class TimetableModule extends BaseModule {
         final List<Config> root = config.get(CONFIG_ROOT);
 
         for (Config lessonNode : root) {
-            final Lesson.ClassInfo info = new Lesson.ClassInfo(
-                    lessonNode.get(CONFIG_CLASS_ROOT + "." + CONFIG_CLASS_CODE),
-                    lessonNode.get(CONFIG_CLASS_ROOT + "." + CONFIG_CLASS_NAME),
-                    lessonNode.get(CONFIG_CLASS_ROOT + "." + CONFIG_CLASS_ROOM),
-                    lessonNode.get(CONFIG_CLASS_ROOT + "." + CONFIG_CLASS_TEACHER)
-            );
 
-            final Lesson.Time time = new Lesson.Time(
-                    lessonNode.getLong(CONFIG_DATE_ROOT + "." + CONFIG_DATE_DAY) * 1000,
-                    Duration.ofMinutes(lessonNode.getInt(CONFIG_DATE_ROOT + "." + CONFIG_DATE_DURATION)),
-                    Duration.ofMinutes(lessonNode.getInt(CONFIG_DATE_ROOT + "." + CONFIG_DATE_HOUR))
+            lessons.add(
+                    new Lesson(
+                            lessonNode.get(CONFIG_MODULE_CODE),
+                            lessonNode.get(CONFIG_MODULE_NAME),
+                            lessonNode.get(CONFIG_TIME_START),
+                            lessonNode.get(CONFIG_TIME_END),
+                            lessonNode.get(CONFIG_ROOM),
+                            lessonNode.get(CONFIG_TEACHER),
+                            lessonNode.get(CONFIG_GROUPS)
+                    )
             );
-
-            final Lesson lesson = new Lesson(info, time, lessonNode.get(CONFIG_GROUPS));
-            lessons.add(lesson);
         }
     }
 
@@ -79,7 +73,7 @@ public class TimetableModule extends BaseModule {
     public List<Lesson> queryDay(@Nonnull final Calendar day) {
 
         return lessons.stream()
-                .filter(l -> l.getTime().getDay().get(Calendar.DAY_OF_YEAR) == day.get(Calendar.DAY_OF_YEAR))
+                .filter(l -> l.getSchedule().getDay().get(Calendar.DAY_OF_YEAR) == day.get(Calendar.DAY_OF_YEAR))
                 .collect(Collectors.toList());
     }
 

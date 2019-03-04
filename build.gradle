@@ -1,15 +1,15 @@
-buildscript {
+/*buildscript {
     repositories {
         jcenter()
     }
     dependencies {
         classpath 'com.github.jengelman.gradle.plugins:shadow:2.0.4'
     }
-}
+}*/
 
 plugins {
     id 'java'
-    id 'com.github.johnrengelman.shadow' version '2.0.4'
+    //id 'com.github.johnrengelman.shadow' version '2.0.4'
 }
 
 group 'com.jesus-crie'
@@ -26,13 +26,13 @@ jar {
     }
 }
 
-shadowJar {
+/*shadowJar {
     baseName = 'IUT2Bot'
     classifier = null
-}
+}*/
 
 project.ext {
-    modularVersion = '2.3.4_18'
+    modularVersion = '2.4.0_20'
 }
 
 repositories {
@@ -41,8 +41,12 @@ repositories {
 }
 
 dependencies {
-    implementation "com.jesus-crie:modularbot-base:$project.ext.modularVersion"
+    implementation "com.jesus-crie:modularbot-core:$project.ext.modularVersion"
+    implementation "com.jesus-crie:modularbot-logger:$project.ext.modularVersion"
+    implementation "com.jesus-crie:modularbot-command:$project.ext.modularVersion"
     implementation "com.jesus-crie:modularbot-night-config-wrapper:$project.ext.modularVersion"
+    implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
+    implementation 'org.jsoup:jsoup:1.11.3'
 
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
