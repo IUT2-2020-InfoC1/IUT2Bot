@@ -103,4 +103,4 @@ gradle-app.setting
 # gradle/wrapper/gradle-wrapper.properties
 
 timetable-formatter/raw.json
-timetable.json
+timetable.nop.json

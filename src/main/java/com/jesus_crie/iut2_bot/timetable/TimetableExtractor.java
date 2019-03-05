@@ -1,6 +1,7 @@
 package com.jesus_crie.iut2_bot.timetable;
 
 import com.electronwill.nightconfig.core.Config;
+import org.jetbrains.annotations.NotNull;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -71,12 +72,20 @@ public class TimetableExtractor {
     }
 
     public void setupDriver(@Nonnull final String... additionalOptions) {
+        LOG.info("Setting up driver...");
         final ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless", "--disable-gpu", "--silent");
         if (additionalOptions.length != 0)
             options.addArguments(additionalOptions);
 
         driver = new ChromeDriver(options);
+    }
+
+    public void unloadDriver() {
+        LOG.info("Destroying driver...");
+        driver.close();
+        driver.quit();
+        driver = null;
     }
 
     @Nonnull
@@ -142,18 +151,19 @@ public class TimetableExtractor {
 
     @Nonnull
     public List<Lesson> processData(@Nonnull final List<Config> data) {
-        final List<Lesson> lessons = new ArrayList<>(data.size());
+        LOG.info("Processing data...");
+        return data.stream()
+                .map(raw -> {
+                    try {
+                        long start = P_DATE_FORMAT.parse(raw.get("date")).getTime();
 
-        for (Config raw : data) {
-            try {
-                long start = P_DATE_FORMAT.parse(raw.get("date")).getTime();
-                start += P_HOUR_FORMAT.parse(raw.get("hour")).getTime();
+                        start += P_HOUR_FORMAT.parse(raw.get("hour")).getTime();
 
-                final Duration duration = parseDuration(raw.get("duration"));
+                        final Duration duration = parseDuration(raw.get("duration"));
 
-                final long end = start + duration.toMillis();
+                        final long end = start + duration.toMillis();
 
-                lessons.add(new Lesson(
+                        return new Lesson(
                                 raw.get("module"),
                                 raw.get("name"),
                                 start,
@@ -163,32 +173,26 @@ public class TimetableExtractor {
                                 Arrays.stream(raw.<String>get("groups").split(" "))
                                         .map(IUTGroup::fromName)
                                         .collect(Collectors.toList())
-                        )
-                );
-            } catch (ParseException e) {
-                LOG.warn("Failed to parse a lesson, skipping...");
-            }
-
-        }
-
-        return lessons;
+                        );
+                    } catch (ParseException e) {
+                        LOG.warn("Failed to parse a lesson, skipping...");
+                        return null;
+                    }
+                }).filter(Objects::nonNull)
+                .collect(Collectors.toList());
     }
 
     @Nonnull
     private Duration parseDuration(@Nonnull final String raw) {
         final Matcher m = P_DURATION_REGEX.matcher(raw);
-        if (m.matches()) {
-            Duration duration = Duration.ofHours(Long.parseLong(m.group(0)));
-            if (m.groupCount() == 2) duration = duration.plusMinutes(Long.parseLong(m.group(1)));
-
+        if (m.matches())
             return Duration.ofHours(Long.parseLong(m.group(1)))
-                    .plusMinutes(m.groupCount() == 2 ? Long.parseLong(m.group(2)) : 0);
-        }
+                    .plusMinutes(m.groupCount() == 3 ? Long.parseLong(m.group(2)) : 0);
 
         return Duration.ZERO;
     }
 
-    public static class Lesson {
+    public static class Lesson implements Comparable<Lesson> {
 
         private final String module;
         private final String moduleName;
@@ -241,6 +245,10 @@ public class TimetableExtractor {
             return endM;
         }
 
+        public long getDurationMillis() {
+            return endM - startM - 3_600_000; // Minus 1h
+        }
+
         @Nonnull
         public String getRoom() {
             return room;
@@ -254,6 +262,11 @@ public class TimetableExtractor {
         @Nonnull
         public List<IUTGroup> getGroups() {
             return groups;
+        }
+
+        @Override
+        public int compareTo(@NotNull final TimetableExtractor.Lesson o) {
+            return (int) (startM - o.startM);
         }
     }
 }

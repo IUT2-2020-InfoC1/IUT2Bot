@@ -1,0 +1,2480 @@
+{
+	"data": [
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 510,
+				"day": 1537135200
+			},
+			"groups": [
+				"INFO1A1", 
+				"INFO1A2", 
+				"INFO1B1", 
+				"INFO1B2"
+			],
+			"class": {
+				"code": "M1101(A) CM",
+				"teacher": "BONNAUD",
+				"name": "Introduction aux systèmes informatiques",
+				"room": "DG-210"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 510,
+				"day": 1537135200
+			},
+			"groups": [
+				"INFO1C1", 
+				"INFO1C2", 
+				"INFO1D1", 
+				"INFO1D2"
+			],
+			"class": {
+				"code": "M1105 CM",
+				"teacher": "PESTY",
+				"name": "Conception doc & interfaces numériques",
+				"room": "DG-110"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 630,
+				"day": 1537135200
+			},
+			"groups": [
+				"INFO1C1", 
+				"INFO1C2", 
+				"INFO1D1", 
+				"INFO1D2"
+			],
+			"class": {
+				"code": "M1101(A) CM",
+				"teacher": "BONNAUD",
+				"name": "Introduction aux systèmes informatiques",
+				"room": "DG-210"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 630,
+				"day": 1537135200
+			},
+			"groups": [
+				"INFO1A1", 
+				"INFO1A2", 
+				"INFO1B1", 
+				"INFO1B2"
+			],
+			"class": {
+				"code": "M1105 CM",
+				"teacher": "PESTY",
+				"name": "Conception doc & interfaces numériques",
+				"room": "DG-110"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 780,
+				"day": 1537135200
+			},
+			"groups": [
+				"INFO1B1"
+			],
+			"class": {
+				"code": "M1105 TP",
+				"teacher": "PESTY",
+				"name": "Conception doc & interfaces numériques",
+				"room": "DG-035"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 780,
+				"day": 1537135200
+			},
+			"groups": [
+				"INFO1A1", 
+				"INFO1A2"
+			],
+			"class": {
+				"code": "M1201 TD",
+				"teacher": "FONTENAS",
+				"name": "Mathématiques discrètes",
+				"room": "DG-110"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 780,
+				"day": 1537135200
+			},
+			"groups": [
+				"INFO1D1", 
+				"INFO1D2"
+			],
+			"class": {
+				"code": "M1203 TD",
+				"teacher": "ROSSET",
+				"name": "Environnement économique",
+				"room": "DG-304"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 810,
+				"day": 1537135200
+			},
+			"groups": [
+				"INFO1C1", 
+				"INFO1C2"
+			],
+			"class": {
+				"code": "M1102 TD C",
+				"teacher": "SIMONET",
+				"name": "Intro algo et prog",
+				"room": "DG-104"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 900,
+				"day": 1537135200
+			},
+			"groups": [
+				"INFO1C1", 
+				"INFO1C2"
+			],
+			"class": {
+				"code": "M1203 TD",
+				"teacher": "ROSSET",
+				"name": "Environnement économique",
+				"room": "DG-110"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 900,
+				"day": 1537135200
+			},
+			"groups": [
+				"INFO1B2"
+			],
+			"class": {
+				"code": "M1105 TP",
+				"teacher": "PESTY",
+				"name": "Conception doc & interfaces numériques",
+				"room": "DG-035"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 900,
+				"day": 1537135200
+			},
+			"groups": [
+				"INFO1D1", 
+				"INFO1D2"
+			],
+			"class": {
+				"code": "M1102 TD D",
+				"teacher": "BLANCHON",
+				"name": "Intro algo et prog",
+				"room": "DG-104"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 900,
+				"day": 1537135200
+			},
+			"groups": [
+				"INFO1A1", 
+				"INFO1A2"
+			],
+			"class": {
+				"code": "M1102 TD A",
+				"teacher": "LEJEUNE",
+				"name": "Intro algo et prog",
+				"room": "DG-015"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 480,
+				"day": 1537221600
+			},
+			"groups": [
+				"INFO1D2"
+			],
+			"class": {
+				"code": "M1105 TP",
+				"teacher": "GUEDRIA",
+				"name": "Conception doc & interfaces numériques",
+				"room": "DG-037"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 510,
+				"day": 1537221600
+			},
+			"groups": [
+				"INFO1B1", 
+				"INFO1B2"
+			],
+			"class": {
+				"code": "M1102 TD B",
+				"teacher": "POPA",
+				"name": "Intro algo et prog",
+				"room": "DG-110"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 510,
+				"day": 1537221600
+			},
+			"groups": [
+				"INFO1D1"
+			],
+			"class": {
+				"code": "M1101(A) TP",
+				"teacher": "CAILLETAUD",
+				"name": "Introduction aux systèmes informatiques",
+				"room": "DG-025"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 510,
+				"day": 1537221600
+			},
+			"groups": [
+				"INFO1C1", 
+				"INFO1C2"
+			],
+			"class": {
+				"code": "M1102 TD C",
+				"teacher": "SIMONET",
+				"name": "Intro algo et prog",
+				"room": "DG-115"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 600,
+				"day": 1537221600
+			},
+			"groups": [
+				"INFO1A1", 
+				"INFO1A2", 
+				"INFO1B1", 
+				"INFO1B2", 
+				"INFO1C1", 
+				"INFO1C2", 
+				"INFO1D1", 
+				"INFO1D2"
+			],
+			"class": {
+				"code": "M1201 CM",
+				"teacher": "HAMON",
+				"name": "Mathématiques discrètes",
+				"room": "Amphi 2"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 780,
+				"day": 1537221600
+			},
+			"groups": [
+				"INFO1B1", 
+				"INFO1B2"
+			],
+			"class": {
+				"code": "M1203 TD",
+				"teacher": "ROSSET",
+				"name": "Environnement économique",
+				"room": "DG-104"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 780,
+				"day": 1537221600
+			},
+			"groups": [
+				"INFO1A1", 
+				"INFO1A2"
+			],
+			"class": {
+				"code": "M1205 TD",
+				"teacher": "WISTUBA",
+				"name": "Fondamentaux de la communication",
+				"room": "DG-015"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 810,
+				"day": 1537221600
+			},
+			"groups": [
+				"INFO1D1", 
+				"INFO1D2"
+			],
+			"class": {
+				"code": "M1102 TD D",
+				"teacher": "BLANCHON",
+				"name": "Intro algo et prog",
+				"room": "DG-204"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 810,
+				"day": 1537221600
+			},
+			"groups": [
+				"INFO1C1"
+			],
+			"class": {
+				"code": "M1102 TP C1",
+				"teacher": "SIMONET",
+				"name": "Intro algo et prog",
+				"room": "DG-035"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 810,
+				"day": 1537221600
+			},
+			"groups": [
+				"INFO1C2"
+			],
+			"class": {
+				"code": "M1102 AA",
+				"teacher": "",
+				"name": "Intro algo et prog",
+				"room": "DG-033"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 900,
+				"day": 1537221600
+			},
+			"groups": [
+				"INFO1B1", 
+				"INFO1B2"
+			],
+			"class": {
+				"code": "M1201 TD",
+				"teacher": "HAMON",
+				"name": "Mathématiques discrètes",
+				"room": "DG-104"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 900,
+				"day": 1537221600
+			},
+			"groups": [
+				"INFO1A1", 
+				"INFO1A2"
+			],
+			"class": {
+				"code": "M1201 TD",
+				"teacher": "FONTENAS",
+				"name": "Mathématiques discrètes",
+				"room": "DG-015"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 900,
+				"day": 1537221600
+			},
+			"groups": [
+				"INFO1D2"
+			],
+			"class": {
+				"code": "M1101(A) TP",
+				"teacher": "CAILLETAUD",
+				"name": "Introduction aux systèmes informatiques",
+				"room": "DG-039"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 900,
+				"day": 1537221600
+			},
+			"groups": [
+				"INFO1C2"
+			],
+			"class": {
+				"code": "M1102 TP C2",
+				"teacher": "SIMONET",
+				"name": "Intro algo et prog",
+				"room": "DG-035"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 900,
+				"day": 1537221600
+			},
+			"groups": [
+				"INFO1C1"
+			],
+			"class": {
+				"code": "M1102 AA",
+				"teacher": "",
+				"name": "Intro algo et prog",
+				"room": "DG-037"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 900,
+				"day": 1537221600
+			},
+			"groups": [
+				"INFO1D1"
+			],
+			"class": {
+				"code": "M1105 TP",
+				"teacher": "GUEDRIA",
+				"name": "Conception doc & interfaces numériques",
+				"room": "DG-033"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 480,
+				"day": 1537308000
+			},
+			"groups": [
+				"INFO1C1", 
+				"INFO1C2"
+			],
+			"class": {
+				"code": "M1201 TD",
+				"teacher": "LAURENT",
+				"name": "Mathématiques discrètes",
+				"room": "DG-104"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 480,
+				"day": 1537308000
+			},
+			"groups": [
+				"INFO1B1", 
+				"INFO1B2"
+			],
+			"class": {
+				"code": "M1206 TD",
+				"teacher": "CHOLLAT NAMY",
+				"name": "Anglais et informatique",
+				"room": "DG-204"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 510,
+				"day": 1537308000
+			},
+			"groups": [
+				"INFO1A2"
+			],
+			"class": {
+				"code": "M1101(A) TP",
+				"teacher": "GUEDRIA",
+				"name": "Introduction aux systèmes informatiques",
+				"room": "DG-035"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 510,
+				"day": 1537308000
+			},
+			"groups": [
+				"INFO1D1"
+			],
+			"class": {
+				"code": "M1102 TP D1",
+				"teacher": "BLANCHON",
+				"name": "Intro algo et prog",
+				"room": "DG-033"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 600,
+				"day": 1537308000
+			},
+			"groups": [
+				"INFO1A1", 
+				"INFO1A2"
+			],
+			"class": {
+				"code": "M1203 TD",
+				"teacher": "ROSSET",
+				"name": "Environnement économique",
+				"room": "DG-315"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 600,
+				"day": 1537308000
+			},
+			"groups": [
+				"INFO1B1", 
+				"INFO1B2"
+			],
+			"class": {
+				"code": "M1102 TD B",
+				"teacher": "POPA",
+				"name": "Intro algo et prog",
+				"room": "DG-110"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 600,
+				"day": 1537308000
+			},
+			"groups": [
+				"INFO1D1", 
+				"INFO1D2"
+			],
+			"class": {
+				"code": "M1201 TD",
+				"teacher": "FONTAINE",
+				"name": "Mathématiques discrètes",
+				"room": "DG-201"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 600,
+				"day": 1537308000
+			},
+			"groups": [
+				"INFO1C1", 
+				"INFO1C2"
+			],
+			"class": {
+				"code": "M1205 TD",
+				"teacher": "WISTUBA",
+				"name": "Fondamentaux de la communication",
+				"room": "DG-115"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 780,
+				"day": 1537308000
+			},
+			"groups": [
+				"INFO1B1"
+			],
+			"class": {
+				"code": "M1105 TP",
+				"teacher": "PESTY",
+				"name": "Conception doc & interfaces numériques",
+				"room": "DG-035"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 780,
+				"day": 1537308000
+			},
+			"groups": [
+				"INFO1C1", 
+				"INFO1C2"
+			],
+			"class": {
+				"code": "M1206 TD",
+				"teacher": "BARDOLPH",
+				"name": "Anglais et informatique",
+				"room": "DG-201"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 780,
+				"day": 1537308000
+			},
+			"groups": [
+				"INFO1A2"
+			],
+			"class": {
+				"code": "M1105 TP",
+				"teacher": "CHEVALLET",
+				"name": "Conception doc & interfaces numériques",
+				"room": "DG-033"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 810,
+				"day": 1537308000
+			},
+			"groups": [
+				"INFO1B2"
+			],
+			"class": {
+				"code": "M1102 TP B2",
+				"teacher": "POPA",
+				"name": "Intro algo et prog",
+				"room": "DG-037"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 810,
+				"day": 1537308000
+			},
+			"groups": [
+				"INFO1D2"
+			],
+			"class": {
+				"code": "M1102 TP D2",
+				"teacher": "BLANCHON",
+				"name": "Intro algo et prog",
+				"room": "DG-S37"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 810,
+				"day": 1537308000
+			},
+			"groups": [
+				"INFO1A1"
+			],
+			"class": {
+				"code": "M1102 TP A1",
+				"teacher": "LEJEUNE",
+				"name": "Intro algo et prog",
+				"room": "DG-039"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 900,
+				"day": 1537308000
+			},
+			"groups": [
+				"INFO1A2"
+			],
+			"class": {
+				"code": "M1102 TP A2",
+				"teacher": "LEJEUNE",
+				"name": "Intro algo et prog",
+				"room": "DG-035"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 900,
+				"day": 1537308000
+			},
+			"groups": [
+				"INFO1A1"
+			],
+			"class": {
+				"code": "M1105 TP",
+				"teacher": "CHEVALLET",
+				"name": "Conception doc & interfaces numériques",
+				"room": "DG-033"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 480,
+				"day": 1537394400
+			},
+			"groups": [
+				"INFO1D1", 
+				"INFO1D2"
+			],
+			"class": {
+				"code": "M1206 TD",
+				"teacher": "CHOLLAT NAMY",
+				"name": "Anglais et informatique",
+				"room": "DG-104"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 480,
+				"day": 1537394400
+			},
+			"groups": [
+				"INFO1C2"
+			],
+			"class": {
+				"code": "M1105 TP",
+				"teacher": "VINCENT",
+				"name": "Conception doc & interfaces numériques",
+				"room": "DG-033"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 510,
+				"day": 1537394400
+			},
+			"groups": [
+				"INFO1A1"
+			],
+			"class": {
+				"code": "M1101(A) TP",
+				"teacher": "GUEDRIA",
+				"name": "Introduction aux systèmes informatiques",
+				"room": "DG-025"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 600,
+				"day": 1537394400
+			},
+			"groups": [
+				"INFO1A1", 
+				"INFO1A2", 
+				"INFO1B1", 
+				"INFO1B2", 
+				"INFO1C1", 
+				"INFO1C2", 
+				"INFO1D1", 
+				"INFO1D2"
+			],
+			"class": {
+				"code": "M1203 CM",
+				"teacher": "ROSSET",
+				"name": "Environnement économique",
+				"room": "Amphi 2"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 30.0,
+				"hour": 690,
+				"day": 1537394400
+			},
+			"groups": [
+				"INFOS1"
+			],
+			"class": {
+				"code": "Présentation PPP",
+				"teacher": "CULET",
+				"name": "",
+				"room": "Amphi 2"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 480,
+				"day": 1537480800
+			},
+			"groups": [
+				"INFO1A1", 
+				"INFO1A2"
+			],
+			"class": {
+				"code": "M1206 TD",
+				"teacher": "BARDOLPH",
+				"name": "Anglais et informatique",
+				"room": "DG-204"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 480,
+				"day": 1537480800
+			},
+			"groups": [
+				"INFO1D1", 
+				"INFO1D2"
+			],
+			"class": {
+				"code": "M1205 TD",
+				"teacher": "Enseignant EC",
+				"name": "Fondamentaux de la communication",
+				"room": "DG-115"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 510,
+				"day": 1537480800
+			},
+			"groups": [
+				"INFO1B2"
+			],
+			"class": {
+				"code": "M1101(A) TP",
+				"teacher": "BONNAUD",
+				"name": "Introduction aux systèmes informatiques",
+				"room": "DG-033"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 510,
+				"day": 1537480800
+			},
+			"groups": [
+				"INFO1B1"
+			],
+			"class": {
+				"code": "M1102 TP B1",
+				"teacher": "POPA",
+				"name": "Intro algo et prog",
+				"room": "DG-035"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 600,
+				"day": 1537480800
+			},
+			"groups": [
+				"INFO1B1"
+			],
+			"class": {
+				"code": "M1101(A) TP",
+				"teacher": "BONNAUD",
+				"name": "Introduction aux systèmes informatiques",
+				"room": "DG-035"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 600,
+				"day": 1537480800
+			},
+			"groups": [
+				"INFO1C1", 
+				"INFO1C2"
+			],
+			"class": {
+				"code": "M1201 TD",
+				"teacher": "LAURENT",
+				"name": "Mathématiques discrètes",
+				"room": "DG-115"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 600,
+				"day": 1537480800
+			},
+			"groups": [
+				"INFO1D1", 
+				"INFO1D2"
+			],
+			"class": {
+				"code": "M1201 TD",
+				"teacher": "FONTAINE",
+				"name": "Mathématiques discrètes",
+				"room": "DG-110"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 600,
+				"day": 1537480800
+			},
+			"groups": [
+				"INFO1A1", 
+				"INFO1A2"
+			],
+			"class": {
+				"code": "M1102 TD A",
+				"teacher": "LEJEUNE",
+				"name": "Intro algo et prog",
+				"room": "DG-015"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 600,
+				"day": 1537480800
+			},
+			"groups": [
+				"INFO1B2"
+			],
+			"class": {
+				"code": "M1102 TP B2",
+				"teacher": "POPA",
+				"name": "Intro algo et prog",
+				"room": "DG-033"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 780,
+				"day": 1537480800
+			},
+			"groups": [
+				"INFO1B1", 
+				"INFO1B2"
+			],
+			"class": {
+				"code": "M1201 TD",
+				"teacher": "HAMON",
+				"name": "Mathématiques discrètes",
+				"room": "DG-015"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 810,
+				"day": 1537480800
+			},
+			"groups": [
+				"INFO1C2"
+			],
+			"class": {
+				"code": "M1101(A) TP",
+				"teacher": "ROISIN",
+				"name": "Introduction aux systèmes informatiques",
+				"room": "DG-037"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 810,
+				"day": 1537480800
+			},
+			"groups": [
+				"INFO1D1"
+			],
+			"class": {
+				"code": "M1102 TP D1",
+				"teacher": "BLANCHON",
+				"name": "Intro algo et prog",
+				"room": "DG-033"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 810,
+				"day": 1537480800
+			},
+			"groups": [
+				"INFO1A2"
+			],
+			"class": {
+				"code": "M1102 TP A2",
+				"teacher": "LEJEUNE",
+				"name": "Intro algo et prog",
+				"room": "DG-039"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 810,
+				"day": 1537480800
+			},
+			"groups": [
+				"INFO1C1"
+			],
+			"class": {
+				"code": "M1102 TP C1",
+				"teacher": "SIMONET",
+				"name": "Intro algo et prog",
+				"room": "DG-035"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 900,
+				"day": 1537480800
+			},
+			"groups": [
+				"INFO1A1"
+			],
+			"class": {
+				"code": "M1102 TP A1",
+				"teacher": "LEJEUNE",
+				"name": "Intro algo et prog",
+				"room": "DG-039"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 900,
+				"day": 1537480800
+			},
+			"groups": [
+				"INFO1C2"
+			],
+			"class": {
+				"code": "M1102 TP C2",
+				"teacher": "SIMONET",
+				"name": "Intro algo et prog",
+				"room": "DG-035"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 900,
+				"day": 1537480800
+			},
+			"groups": [
+				"INFO1D2"
+			],
+			"class": {
+				"code": "M1102 TP D2",
+				"teacher": "BLANCHON",
+				"name": "Intro algo et prog",
+				"room": "DG-033"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 900,
+				"day": 1537480800
+			},
+			"groups": [
+				"INFO1C1"
+			],
+			"class": {
+				"code": "M1105 TP",
+				"teacher": "VINCENT",
+				"name": "Conception doc & interfaces numériques",
+				"room": "DG-037"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 510,
+				"day": 1537740000
+			},
+			"groups": [
+				"INFO1A1", 
+				"INFO1A2", 
+				"INFO1B1", 
+				"INFO1B2"
+			],
+			"class": {
+				"code": "M1101(A) CM",
+				"teacher": "BONNAUD",
+				"name": "Introduction aux systèmes informatiques",
+				"room": "DG-210"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 510,
+				"day": 1537740000
+			},
+			"groups": [
+				"INFO1C1", 
+				"INFO1C2", 
+				"INFO1D1", 
+				"INFO1D2"
+			],
+			"class": {
+				"code": "M1105 CM",
+				"teacher": "PESTY",
+				"name": "Conception doc & interfaces numériques",
+				"room": "DG-110"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 630,
+				"day": 1537740000
+			},
+			"groups": [
+				"INFO1C1", 
+				"INFO1C2", 
+				"INFO1D1", 
+				"INFO1D2"
+			],
+			"class": {
+				"code": "M1101(A) CM",
+				"teacher": "BONNAUD",
+				"name": "Introduction aux systèmes informatiques",
+				"room": "DG-210"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 630,
+				"day": 1537740000
+			},
+			"groups": [
+				"INFO1A1", 
+				"INFO1A2", 
+				"INFO1B1", 
+				"INFO1B2"
+			],
+			"class": {
+				"code": "M1105 CM",
+				"teacher": "PESTY",
+				"name": "Conception doc & interfaces numériques",
+				"room": "DG-110"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 780,
+				"day": 1537740000
+			},
+			"groups": [
+				"INFO1A1", 
+				"INFO1A2"
+			],
+			"class": {
+				"code": "M1201 TD",
+				"teacher": "FONTENAS",
+				"name": "Mathématiques discrètes",
+				"room": "DG-115"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 780,
+				"day": 1537740000
+			},
+			"groups": [
+				"INFO1D1", 
+				"INFO1D2"
+			],
+			"class": {
+				"code": "M1203 TD",
+				"teacher": "ROSSET",
+				"name": "Environnement économique",
+				"room": "DG-011"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 780,
+				"day": 1537740000
+			},
+			"groups": [
+				"INFO1B1"
+			],
+			"class": {
+				"code": "M1101(A) TP",
+				"teacher": "BONNAUD",
+				"name": "Introduction aux systèmes informatiques",
+				"room": "DG-025"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 780,
+				"day": 1537740000
+			},
+			"groups": [
+				"INFO1B2"
+			],
+			"class": {
+				"code": "M1105 TP",
+				"teacher": "PESTY",
+				"name": "Conception doc & interfaces numériques",
+				"room": "DG-039"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 810,
+				"day": 1537740000
+			},
+			"groups": [
+				"INFO1C1", 
+				"INFO1C2"
+			],
+			"class": {
+				"code": "M1102 TD C",
+				"teacher": "SIMONET",
+				"name": "Intro algo et prog",
+				"room": "DG-104"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 900,
+				"day": 1537740000
+			},
+			"groups": [
+				"INFO1C1", 
+				"INFO1C2"
+			],
+			"class": {
+				"code": "M1203 TD",
+				"teacher": "ROSSET",
+				"name": "Environnement économique",
+				"room": "DG-110"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 900,
+				"day": 1537740000
+			},
+			"groups": [
+				"INFO1B2"
+			],
+			"class": {
+				"code": "M1101(A) TP",
+				"teacher": "BONNAUD",
+				"name": "Introduction aux systèmes informatiques",
+				"room": "DG-037"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 900,
+				"day": 1537740000
+			},
+			"groups": [
+				"INFO1D1", 
+				"INFO1D2"
+			],
+			"class": {
+				"code": "M1102 TD D",
+				"teacher": "BLANCHON",
+				"name": "Intro algo et prog",
+				"room": "DG-115"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 900,
+				"day": 1537740000
+			},
+			"groups": [
+				"INFO1A1", 
+				"INFO1A2"
+			],
+			"class": {
+				"code": "M1102 TD A",
+				"teacher": "LEJEUNE",
+				"name": "Intro algo et prog",
+				"room": "DG-104"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 900,
+				"day": 1537740000
+			},
+			"groups": [
+				"INFO1B1"
+			],
+			"class": {
+				"code": "M1105 TP",
+				"teacher": "PESTY",
+				"name": "Conception doc & interfaces numériques",
+				"room": "DG-033"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 990,
+				"day": 1537740000
+			},
+			"groups": [
+				"INFO1D2"
+			],
+			"class": {
+				"code": "M1207 - PPP",
+				"teacher": "ROISIN",
+				"name": "",
+				"room": "DG-011"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 480,
+				"day": 1537826400
+			},
+			"groups": [
+				"INFO1D1"
+			],
+			"class": {
+				"code": "M1206 TP",
+				"teacher": "CHOLLAT NAMY",
+				"name": "Anglais et informatique",
+				"room": "DG-013"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 480,
+				"day": 1537826400
+			},
+			"groups": [
+				"INFO1D2"
+			],
+			"class": {
+				"code": "M1105 TP",
+				"teacher": "GUEDRIA",
+				"name": "Conception doc & interfaces numériques",
+				"room": "DG-039"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 510,
+				"day": 1537826400
+			},
+			"groups": [
+				"INFO1B1"
+			],
+			"class": {
+				"code": "M1102 TP B1",
+				"teacher": "POPA",
+				"name": "Intro algo et prog",
+				"room": "DG-027"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 510,
+				"day": 1537826400
+			},
+			"groups": [
+				"INFO1C1", 
+				"INFO1C2"
+			],
+			"class": {
+				"code": "M1102 TD C",
+				"teacher": "SIMONET",
+				"name": "Intro algo et prog",
+				"room": "DG-015"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 600,
+				"day": 1537826400
+			},
+			"groups": [
+				"INFO1B1", 
+				"INFO1B2"
+			],
+			"class": {
+				"code": "M1102 TD B",
+				"teacher": "POPA",
+				"name": "Intro algo et prog",
+				"room": "DG-017"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 600,
+				"day": 1537826400
+			},
+			"groups": [
+				"INFO1C1", 
+				"INFO1C2"
+			],
+			"class": {
+				"code": "M1201 TD",
+				"teacher": "LAURENT",
+				"name": "Mathématiques discrètes",
+				"room": "DG-104"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 600,
+				"day": 1537826400
+			},
+			"groups": [
+				"INFO1A1", 
+				"INFO1A2"
+			],
+			"class": {
+				"code": "M1203 TD",
+				"teacher": "ROSSET",
+				"name": "Environnement économique",
+				"room": "DG-011"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 600,
+				"day": 1537826400
+			},
+			"groups": [
+				"INFO1D2"
+			],
+			"class": {
+				"code": "M1206 TP",
+				"teacher": "CHOLLAT NAMY",
+				"name": "Anglais et informatique",
+				"room": "DG-013"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 600,
+				"day": 1537826400
+			},
+			"groups": [
+				"INFO1D1"
+			],
+			"class": {
+				"code": "M1105 TP",
+				"teacher": "GUEDRIA",
+				"name": "Conception doc & interfaces numériques",
+				"room": "DG-037"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 780,
+				"day": 1537826400
+			},
+			"groups": [
+				"INFO1A1"
+			],
+			"class": {
+				"code": "M1207 - PPP",
+				"teacher": "GEROT",
+				"name": "",
+				"room": "DG-233"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 780,
+				"day": 1537826400
+			},
+			"groups": [
+				"INFO1B1", 
+				"INFO1B2"
+			],
+			"class": {
+				"code": "M1203 TD",
+				"teacher": "ROSSET",
+				"name": "Environnement économique",
+				"room": "DG-015"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 780,
+				"day": 1537826400
+			},
+			"groups": [
+				"INFO1C2"
+			],
+			"class": {
+				"code": "M1205 TP",
+				"teacher": "WISTUBA",
+				"name": "Fondamentaux de la communication",
+				"room": "DG-011"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 780,
+				"day": 1537826400
+			},
+			"groups": [
+				"INFO1A2"
+			],
+			"class": {
+				"code": "M1206 TP",
+				"teacher": "BARDOLPH",
+				"name": "Anglais et informatique",
+				"room": "DG-145 Langue 1"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 810,
+				"day": 1537826400
+			},
+			"groups": [
+				"INFO1D1", 
+				"INFO1D2"
+			],
+			"class": {
+				"code": "M1102 TD D",
+				"teacher": "BLANCHON",
+				"name": "Intro algo et prog",
+				"room": "DG-115"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 810,
+				"day": 1537826400
+			},
+			"groups": [
+				"INFO1C1"
+			],
+			"class": {
+				"code": "M1102 TP C1",
+				"teacher": "SIMONET",
+				"name": "Intro algo et prog",
+				"room": "DG-037"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 900,
+				"day": 1537826400
+			},
+			"groups": [
+				"INFO1D2"
+			],
+			"class": {
+				"code": "M1101(A) TP",
+				"teacher": "CAILLETAUD",
+				"name": "Introduction aux systèmes informatiques",
+				"room": "DG-037"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 900,
+				"day": 1537826400
+			},
+			"groups": [
+				"INFO1D1"
+			],
+			"class": {
+				"code": "M1102 TP D1",
+				"teacher": "BLANCHON",
+				"name": "Intro algo et prog",
+				"room": "DG-035"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 900,
+				"day": 1537826400
+			},
+			"groups": [
+				"INFO1B1", 
+				"INFO1B2"
+			],
+			"class": {
+				"code": "M1201 TD",
+				"teacher": "HAMON",
+				"name": "Mathématiques discrètes",
+				"room": "DG-015"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 900,
+				"day": 1537826400
+			},
+			"groups": [
+				"INFO1A1", 
+				"INFO1A2"
+			],
+			"class": {
+				"code": "M1201 TD",
+				"teacher": "FONTENAS",
+				"name": "Mathématiques discrètes",
+				"room": "DG-104"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 900,
+				"day": 1537826400
+			},
+			"groups": [
+				"INFO1C1"
+			],
+			"class": {
+				"code": "M1205 TP",
+				"teacher": "WISTUBA",
+				"name": "Fondamentaux de la communication",
+				"room": "DG-115"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 900,
+				"day": 1537826400
+			},
+			"groups": [
+				"INFO1C2"
+			],
+			"class": {
+				"code": "M1102 TP C2",
+				"teacher": "SIMONET",
+				"name": "Intro algo et prog",
+				"room": "DG-033"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 990,
+				"day": 1537826400
+			},
+			"groups": [
+				"INFO1D1"
+			],
+			"class": {
+				"code": "M1101(A) TP",
+				"teacher": "CAILLETAUD",
+				"name": "Introduction aux systèmes informatiques",
+				"room": "DG-025"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 480,
+				"day": 1537912800
+			},
+			"groups": [
+				"INFO1A1"
+			],
+			"class": {
+				"code": "M1205 TP",
+				"teacher": "WISTUBA",
+				"name": "Fondamentaux de la communication",
+				"room": "DG-201"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 480,
+				"day": 1537912800
+			},
+			"groups": [
+				"INFO1D2"
+			],
+			"class": {
+				"code": "M1205 TP",
+				"teacher": "Enseignant EC",
+				"name": "Fondamentaux de la communication",
+				"room": "DG-115"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 510,
+				"day": 1537912800
+			},
+			"groups": [
+				"INFO1C1"
+			],
+			"class": {
+				"code": "M1101(A) TP",
+				"teacher": "ROISIN",
+				"name": "Introduction aux systèmes informatiques",
+				"room": "DG-025"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 510,
+				"day": 1537912800
+			},
+			"groups": [
+				"INFO1A2"
+			],
+			"class": {
+				"code": "M1101(A) TP",
+				"teacher": "GUEDRIA",
+				"name": "Introduction aux systèmes informatiques",
+				"room": "DG-027"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 510,
+				"day": 1537912800
+			},
+			"groups": [
+				"INFO1B1", 
+				"INFO1B2"
+			],
+			"class": {
+				"code": "M1102 TD B",
+				"teacher": "POPA",
+				"name": "Intro algo et prog",
+				"room": "DG-215"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 600,
+				"day": 1537912800
+			},
+			"groups": [
+				"INFO1A1"
+			],
+			"class": {
+				"code": "M1101(A) TP",
+				"teacher": "GUEDRIA",
+				"name": "Introduction aux systèmes informatiques",
+				"room": "DG-025"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 600,
+				"day": 1537912800
+			},
+			"groups": [
+				"INFO1B1"
+			],
+			"class": {
+				"code": "M1102 TP B1",
+				"teacher": "POPA",
+				"name": "Intro algo et prog",
+				"room": "DG-039"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 600,
+				"day": 1537912800
+			},
+			"groups": [
+				"INFO1B2"
+			],
+			"class": {
+				"code": "M1207 - PPP",
+				"teacher": "ROSSET",
+				"name": "",
+				"room": "DG-233"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 600,
+				"day": 1537912800
+			},
+			"groups": [
+				"INFO1C2"
+			],
+			"class": {
+				"code": "M1207 - PPP",
+				"teacher": "CHOLLAT NAMY",
+				"name": "",
+				"room": "DG-017"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 600,
+				"day": 1537912800
+			},
+			"groups": [
+				"INFO1D1", 
+				"INFO1D2"
+			],
+			"class": {
+				"code": "M1201 TD",
+				"teacher": "FONTAINE",
+				"name": "Mathématiques discrètes",
+				"room": "DG-104"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 600,
+				"day": 1537912800
+			},
+			"groups": [
+				"INFO1A2"
+			],
+			"class": {
+				"code": "M1205 TP",
+				"teacher": "WISTUBA",
+				"name": "Fondamentaux de la communication",
+				"room": "DG-115"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 600,
+				"day": 1537912800
+			},
+			"groups": [
+				"INFO1C1"
+			],
+			"class": {
+				"code": "M1206 TP",
+				"teacher": "BARDOLPH",
+				"name": "Anglais et informatique",
+				"room": "DG-134 Langue 3"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 780,
+				"day": 1537912800
+			},
+			"groups": [
+				"INFO1D1"
+			],
+			"class": {
+				"code": "M1207 - PPP",
+				"teacher": "ROSSET",
+				"name": "",
+				"room": "DG-233"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 780,
+				"day": 1537912800
+			},
+			"groups": [
+				"INFO1B1"
+			],
+			"class": {
+				"code": "M1205 TP",
+				"teacher": "Enseignant EC",
+				"name": "Fondamentaux de la communication",
+				"room": "DG-115"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 780,
+				"day": 1537912800
+			},
+			"groups": [
+				"INFO1C2"
+			],
+			"class": {
+				"code": "M1206 TP",
+				"teacher": "BARDOLPH",
+				"name": "Anglais et informatique",
+				"room": "DG-134 Langue 3"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 780,
+				"day": 1537912800
+			},
+			"groups": [
+				"INFO1A2"
+			],
+			"class": {
+				"code": "M1105 TP",
+				"teacher": "CHEVALLET",
+				"name": "Conception doc & interfaces numériques",
+				"room": "DG-025"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 810,
+				"day": 1537912800
+			},
+			"groups": [
+				"INFO1B2"
+			],
+			"class": {
+				"code": "M1102 TP B2",
+				"teacher": "POPA",
+				"name": "Intro algo et prog",
+				"room": "DG-033"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 810,
+				"day": 1537912800
+			},
+			"groups": [
+				"INFO1A1"
+			],
+			"class": {
+				"code": "M1102 TP A1",
+				"teacher": "LEJEUNE",
+				"name": "Intro algo et prog",
+				"room": "DG-035"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 900,
+				"day": 1537912800
+			},
+			"groups": [
+				"INFO1B1"
+			],
+			"class": {
+				"code": "M1207 - PPP",
+				"teacher": "BARDOLPH",
+				"name": "",
+				"room": "DG-011"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 900,
+				"day": 1537912800
+			},
+			"groups": [
+				"INFO1B2"
+			],
+			"class": {
+				"code": "M1205 TP",
+				"teacher": "Enseignant EC",
+				"name": "Fondamentaux de la communication",
+				"room": "DG-115"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 900,
+				"day": 1537912800
+			},
+			"groups": [
+				"INFO1A2"
+			],
+			"class": {
+				"code": "M1102 TP A2",
+				"teacher": "LEJEUNE",
+				"name": "Intro algo et prog",
+				"room": "DG-027"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 900,
+				"day": 1537912800
+			},
+			"groups": [
+				"INFO1A1"
+			],
+			"class": {
+				"code": "M1105 TP",
+				"teacher": "CHEVALLET",
+				"name": "Conception doc & interfaces numériques",
+				"room": "DG-037"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 480,
+				"day": 1537999200
+			},
+			"groups": [
+				"INFO1D1"
+			],
+			"class": {
+				"code": "M1205 TP",
+				"teacher": "Enseignant EC",
+				"name": "Fondamentaux de la communication",
+				"room": "DG-115"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 480,
+				"day": 1537999200
+			},
+			"groups": [
+				"INFO1A1"
+			],
+			"class": {
+				"code": "M1206 TP",
+				"teacher": "BARDOLPH",
+				"name": "Anglais et informatique",
+				"room": "DG-134 Langue 3"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 480,
+				"day": 1537999200
+			},
+			"groups": [
+				"INFO1C2"
+			],
+			"class": {
+				"code": "M1105 TP",
+				"teacher": "VINCENT",
+				"name": "Conception doc & interfaces numériques",
+				"room": "DG-035"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 600,
+				"day": 1537999200
+			},
+			"groups": [
+				"INFO1A1", 
+				"INFO1A2", 
+				"INFO1B1", 
+				"INFO1B2", 
+				"INFO1C1", 
+				"INFO1C2", 
+				"INFO1D1", 
+				"INFO1D2"
+			],
+			"class": {
+				"code": "M1203 CM",
+				"teacher": "ROSSET",
+				"name": "Environnement économique",
+				"room": "Amphi 2"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 480,
+				"day": 1538085600
+			},
+			"groups": [
+				"INFO1A2"
+			],
+			"class": {
+				"code": "M1207 - PPP",
+				"teacher": "CORSET",
+				"name": "",
+				"room": "DG-232"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 480,
+				"day": 1538085600
+			},
+			"groups": [
+				"INFO1C1", 
+				"INFO1C2"
+			],
+			"class": {
+				"code": "M1201 TD",
+				"teacher": "LAURENT",
+				"name": "Mathématiques discrètes",
+				"room": "DG-015"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 480,
+				"day": 1538085600
+			},
+			"groups": [
+				"INFO1D1", 
+				"INFO1D2"
+			],
+			"class": {
+				"code": "M1201 TD",
+				"teacher": "FONTAINE",
+				"name": "Mathématiques discrètes",
+				"room": "DG-011"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 510,
+				"day": 1538085600
+			},
+			"groups": [
+				"INFO1B2"
+			],
+			"class": {
+				"code": "M1102 TP B2",
+				"teacher": "POPA",
+				"name": "Intro algo et prog",
+				"room": "DG-037"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 600,
+				"day": 1538085600
+			},
+			"groups": [
+				"INFO1A1", 
+				"INFO1A2"
+			],
+			"class": {
+				"code": "M1102 TD A",
+				"teacher": "LEJEUNE",
+				"name": "Intro algo et prog",
+				"room": "DG-015"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 600,
+				"day": 1538085600
+			},
+			"groups": [
+				"INFO1B1"
+			],
+			"class": {
+				"code": "M1102 TP B1",
+				"teacher": "POPA",
+				"name": "Intro algo et prog",
+				"room": "DG-027"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 600,
+				"day": 1538085600
+			},
+			"groups": [
+				"INFO1C1"
+			],
+			"class": {
+				"code": "M1207 - PPP",
+				"teacher": "CULET",
+				"name": "",
+				"room": "DG-232"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 600,
+				"day": 1538085600
+			},
+			"groups": [
+				"INFO1B2"
+			],
+			"class": {
+				"code": "M1206 TP",
+				"teacher": "CHOLLAT NAMY",
+				"name": "Anglais et informatique",
+				"room": "DG-017"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 600,
+				"day": 1538085600
+			},
+			"groups": [
+				"INFO1C2"
+			],
+			"class": {
+				"code": "M1101(A) TP",
+				"teacher": "ROISIN",
+				"name": "Introduction aux systèmes informatiques",
+				"room": "DG-033"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 600,
+				"day": 1538085600
+			},
+			"groups": [
+				"INFO1D2"
+			],
+			"class": {
+				"code": "M1102 TP D2",
+				"teacher": "BLANCHON",
+				"name": "Intro algo et prog",
+				"room": "DG-037"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 780,
+				"day": 1538085600
+			},
+			"groups": [
+				"INFO1B1", 
+				"INFO1B2"
+			],
+			"class": {
+				"code": "M1201 TD",
+				"teacher": "HAMON",
+				"name": "Mathématiques discrètes",
+				"room": "DG-115"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 810,
+				"day": 1538085600
+			},
+			"groups": [
+				"INFO1A2"
+			],
+			"class": {
+				"code": "M1102 TP A2",
+				"teacher": "LEJEUNE",
+				"name": "Intro algo et prog",
+				"room": "DG-033"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 810,
+				"day": 1538085600
+			},
+			"groups": [
+				"INFO1D1"
+			],
+			"class": {
+				"code": "M1102 TP D1",
+				"teacher": "BLANCHON",
+				"name": "Intro algo et prog",
+				"room": "DG-025"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 810,
+				"day": 1538085600
+			},
+			"groups": [
+				"INFO1C1"
+			],
+			"class": {
+				"code": "M1102 TP C1",
+				"teacher": "SIMONET",
+				"name": "Intro algo et prog",
+				"room": "DG-037"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 900,
+				"day": 1538085600
+			},
+			"groups": [
+				"INFO1B1"
+			],
+			"class": {
+				"code": "M1206 TP",
+				"teacher": "CHOLLAT NAMY",
+				"name": "Anglais et informatique",
+				"room": "DG-011"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 900,
+				"day": 1538085600
+			},
+			"groups": [
+				"INFO1A1"
+			],
+			"class": {
+				"code": "M1102 TP A1",
+				"teacher": "LEJEUNE",
+				"name": "Intro algo et prog",
+				"room": "DG-035"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 900,
+				"day": 1538085600
+			},
+			"groups": [
+				"INFO1C2"
+			],
+			"class": {
+				"code": "M1102 TP C2",
+				"teacher": "SIMONET",
+				"name": "Intro algo et prog",
+				"room": "DG-037"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 90.0,
+				"hour": 900,
+				"day": 1538085600
+			},
+			"groups": [
+				"INFO1D2"
+			],
+			"class": {
+				"code": "M1102 TP D2",
+				"teacher": "BLANCHON",
+				"name": "Intro algo et prog",
+				"room": "DG-027"
+			}
+		}, 
+		{
+			"date": {
+				"duration": 120.0,
+				"hour": 900,
+				"day": 1538085600
+			},
+			"groups": [
+				"INFO1C1"
+			],
+			"class": {
+				"code": "M1105 TP",
+				"teacher": "VINCENT",
+				"name": "Conception doc & interfaces numériques",
+				"room": "DG-033"
+			}
+		}
+	]
+}
